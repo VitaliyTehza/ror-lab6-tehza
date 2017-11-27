@@ -1,0 +1,9 @@
+<p><%= link_to "Upload new photo", new_photo_path, class: "btn btn-warning"%></p>
+
+<%if @photos == [] %>
+<p>Photo net</p>
+<% else %>
+<%  @photos.each do |photo|%>
+	<%= photo.name %>
+	<%end%>
+	<%end%>
